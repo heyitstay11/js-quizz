@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quizHeader">
+            <div class="scores"><img src="tick.png" alt="tick"><span id= "correct">0</span>correct</div>
+            <div class="scores"><img src="cross.png" alt="cross"><span id= "wrong">0</span>wrong</div>
+        </div>
+        <div class="quizbody">
+            <div class="question" id="question"><h3>Question</h3></div>
+            <ul>
+                <li><input type="radio" name="answer" class="answer" id="a"><label for="a" id="a_text"> Answer a</label></li>
+                <li><input type="radio" name="answer" class="answer" id="b"><label for="b" id="b_text"> Answer b</label></li>
+                <li><input type="radio" name="answer" class="answer" id="c"><label for="c" id="c_text"> Answer c</label></li>
+                <li><input type="radio" name="answer" class="answer" id="d"><label for="d" id="d_text"> Answer d</label></li>
+            </ul>
+            <button id="submit">Submit &nbsp;&nbsp;>></button>
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
