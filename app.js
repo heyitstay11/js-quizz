@@ -106,3 +106,16 @@ submitBtn.addEventListener('click', () => {
   
    
 })
+
+/* -------     DARK MODE    --------*/
+
+const quizHead = document.querySelector(".quizHeader");
+const quizBody = document.querySelector(".quizbody");
+const toggleBtn = document.querySelector(".toggle");
+
+toggleBtn.addEventListener('click',() =>{
+    document.body.classList.toggle('night');
+     [quizHead, quizBody, submitBtn].forEach((element) =>{
+         element.classList.toggle('night');
+     })
+})
